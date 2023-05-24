@@ -12,7 +12,7 @@
   function InputBoxController($scope) {
     $scope.input = "";
     $scope.check = "";
-    $scope.isConditionTrue = false;
+    $scope.colour = "black";
 
     $scope.checkIfPresent = function () {
       var arrayStrings = $scope.input.split(";");
@@ -23,15 +23,15 @@
         });
       if (!(count > 0)) {
         $scope.check = "Please enter data first";
-        $scope.isConditionTrue = true;
+        $scope.colour = "red";
       }
       else if (count <= 3) {
         $scope.check = "Enjoy!";
-        $scope.isConditionTrue = false;
+        $scope.colour = "green";
       }
       else {
         $scope.check = "Too much!";
-        $scope.isConditionTrue = false;
+        $scope.colour = "green";
       }
     }
 

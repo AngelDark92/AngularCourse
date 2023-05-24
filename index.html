@@ -16,12 +16,12 @@
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="input" ng-style="{'border-color': isConditionTrue ? 'red' : 'green'}">
+             class="form-control" ng-model="input" ng-style="{'border-color': colour}">
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkIfPresent()">Check If Too Much</button>
          </div>
-         <div class="form-group message" ng-style="{'color': isConditionTrue ? 'red' : 'green'}">
+         <div class="form-group message" ng-style="{'color': colour}">
            {{check}}
          </div>
    </div>
