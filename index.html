@@ -2,9 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Coursera</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>La Tavernetta - Restaurant and Pizzeria</title>
 </head>
-<body>
-    <h1>Body</h1>
+<body ng-app="TavernettaLogin">
+    <h1>Login to Tavernetta's Website</h1>
+    <div ng-controller="Login">
+        <div>
+          Your name:
+          <input type="text"
+            ng-model="name"
+            ng-keyup="checkIfPresent();">
+        </div>
+        <div>Username: {{present}}</div>
+      </div>
+      <h6>Hint: AngeloDark92</h6>
 </body>
 </html>
