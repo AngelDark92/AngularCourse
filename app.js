@@ -11,7 +11,7 @@
   InputBoxController.$inject = ["$scope"];
   function InputBoxController($scope) {
     $scope.input = "";
-    $scope.check = "Please enter data first";
+    $scope.check = "";
 
     $scope.checkIfPresent = function () {
       var check = checkArray($scope.input);
