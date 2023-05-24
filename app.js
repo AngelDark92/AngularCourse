@@ -12,32 +12,28 @@
   function InputBoxController($scope) {
     $scope.input = "";
     $scope.check = "";
+    $scope.isConditionTrue = false;
 
     $scope.checkIfPresent = function () {
-      var check = checkArray($scope.input);
-      $scope.check = check;
-    };
-
-
-    function checkArray(string) {
-      var arrayStrings = string.split(";");
+      var arrayStrings = $scope.input.split(";");
       var count = 0;
       arrayStrings.filter(item => item.trim() != "").forEach(item =>
         {
           count++;
         });
       if (!(count > 0)) {
-        return "Please enter data first";
+        $scope.check = "Please enter data first";
+        $scope.isConditionTrue = true;
       }
       else if (count <= 3) {
-        return "Enjoy!";
+        $scope.check = "Enjoy!";
+        $scope.isConditionTrue = false;
       }
       else {
-        return "Too much!";
+        $scope.check = "Too much!";
+        $scope.isConditionTrue = false;
       }
     }
 
-  };
-
-
+    };
 })();
