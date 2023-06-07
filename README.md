@@ -3,7 +3,7 @@
 Coursera Single Page Web Applications with AngularJS by the John Hopkins University course.
 
 ## GitHub Page
-[Github Page for this Project]([https://www.coursera.org/learn/single-page-web-apps-with-angularjs/discussions/weeks/1](https://angeldark92.github.io/CSAngularWeek1)
+[Github Page for this Project](https://angeldark92.github.io/CSAngularWeek1)
 
 Week 1 Assignment: 
 
